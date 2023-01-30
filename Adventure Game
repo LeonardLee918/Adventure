@@ -1,0 +1,118 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    string s;
+    cout << "Hello, play this game.  Be sure to input the answer capitalized as it is on the screen" << "\n";
+    cout << "Where do you wish to explore, hospital or graveyard?" << "\n";
+    cin >> s;
+    if (s == "hospital") {
+        cout << "You enter the hospital and walks down the hall.  There, you see two rooms on each side.  Pick the room, left or right." << "\n";
+          cin >> s;
+          if (s == "left") {
+            cout << "As you enter, the window creaks open, and a light shadow come in.  You remember that someone was murdered here, hence the closing of the hopsital.  You see a lamp.  Do you light it? (yes or no)" << "\n";
+            cin >> s;
+            if (s == "yes") {
+                cout << "You light the lamp, but the light remains there.  With no light source, you know that it has to be a spirit.  Do you try to catch the spirit or flee?" << "\n";
+                cin >> s;
+                if (s == "catch the spirit") {
+                    cout << "As you run towards the spirit, you were suddenly knocked from behind.  You fall unconcious, later waking up in your own bed.  Was it a dream or reality?" << "\n";
+                }
+                else {
+                    cout << "Thinking that your life is about to end here, you jump out the window past the spirit, running back to your home, vowing to never go there again." << "\n";
+                }
+            }
+            else {
+                "You decide to not light the lamp, finding yourself face to face with a woman.  She offers you a cup of tea.  Do you drink it? (yes or no)";
+                cin >> s;
+                if (s == "no") {
+                    cout << "You refuse to drink the tea, as you have suspicions on its ingredients.  As you decide to turn around, a green demon appears out of the tea, cutting off your oxygen intake.  As your head falls into blackness, you feel a freaky laugh as you collapse onto the floor." << "\n";
+                }
+                else {
+                    cout << "You accept the tea, not knowing that there is KCN, and dies shortly after drinking the tea." << "\n";
+                }
+            }
+            
+            }
+          else {
+            cout << "Curious of what is in the room at the right, you push open the door and see weapons all pointing at you, as if it knew you were coming. Do you run or continue?" << "\n";
+            cin >> s;
+            if (s == "run") {
+                cout << "you try to flee, but the outmost door is locked. Do you turn back or give up?" << "\n";
+                cin >> s;
+                if (s == "turn back") {
+                    cout << "You turn around just in time to see the grim reaper slice you in half, ending your life almost immediately." << "\n";
+                }
+                else {
+                    cout << "You decide to give up, eventually starving to death." << "\n";
+                }
+            }
+            else {
+                cout << "Continuing through the mass of blades, you cut yourself in the knee, breaking it.  Do you use your bandage? (yes or no)" << "\n";
+                cin >> s;
+                if (s == "no") {
+                    cout << "You sit in the corner, bleeding to death as you see a final blade impale you between the eyes." << "\n";
+                }
+                else {
+                    cout << "Hours have passed after you put on the bandages, and you realize you forgot to clean it.  Stumbling out into the open field, a car passes by, and carries you to the hospital right away." << "\n";
+                }
+            }
+
+          }
+
+    }
+    else {
+        cout << "You walk into the graveyard, not knowing what is there.  You see light from under a tomb.  Do you go examine or ignore?" << "\n";
+            cin >> s;
+            if (s == "examine") {
+                cout << "You decide to examine it.  You lift up the stone slab, and enter.  You see buttons on the wall.  Do you push it or not? (yes or no)" << "\n";
+                cin >> s;
+                if (s == "yes") {
+                    cout << "You press numerous buttons, and nothing happens.  You see a final one on the floor, and steps on it, opening up two paths.  Do you go in the 'left' one or 'right' one??" << "\n";
+                    cin >> s;
+                    if (s == "left") {
+                        cout << "Proceeding into the darkness or the left passage, you decide to run down a series of stairs where you trigger an unexpected arrow trap.  Impaling you from all sides, you stand there, paralyzed as you go through a slow, painful death." << "\n";
+                    }
+                    else {
+                        cout << "Seeing a tall, bandified figure down the tunnel, you immediately run out and starts telling everyone.  The people see you as insane, and sends you to the hospital." << "\n";
+                    }
+                }
+                else {
+                    "You decide not to push the buttons and walk down a staircase to your right.  However, you lose footing and slip down the stairs, spraining your ankle.  Do you rest or continue?";
+                    cin >> s;
+                    if (s == "rest") {
+                        cout << "Taking out your sleeping kit and lying down, you quickly fall alseep, not realizing under you is a pit of snakes.  As you slip into a peaceful and dreamless sleep, you do not realize you will not see tomorrow." << "\n";
+                    }
+                    else {
+                        cout << "You decide to continue walking with your injury.  You step on a plate, and the floor under you gives away.  You did not evade the trap because of your injury, smashing your skull against the cold, hard floor fifty feet below." << "\n";
+                    }
+                }
+            
+            }
+            else {
+                cout << "You decide to ignore the strange light from the inside of the tomb.  As you walk away, you feel the precense of something behind you.  Do you turn around or keep walking?" << "\n";
+                cin >> s;
+                if (s == "turn around") {
+                    cout << "you turn around, coming face to face with a huge man with knives.  Pulling out your glock, you aim for the head.  You shoot, but you miss.  Do you shoot again or run?" << "\n";
+                    cin >> s;
+                    if (s == "shoot again") {
+                        cout << "You shoot again, this time directly peircing the man in the skull.  After the person collapses, you leave, not wanting to be charged with first degree murder." << "\n";
+                    }
+                    else {
+                        cout << "You run, but the man has excellent aim.  With one big throw, the knife sinks into your chest, leaving you bleeding on the ground." << "\n";
+                    }
+                }
+                else {
+                    cout << "you decide to keep walking, but a huge blow from behind sent you toppling.  You come face to face with a huge man.  Do you attempt to get past him or kill?" << "\n";
+                    cin >> s;
+                    if (s == "kill") {
+                        cout << "Pulling out your glock, you fire at the man, missing both bullets.  With no more spare ammunition, you are now defensless, leaving you with the only choice but to embrance the other world." << "\n";
+                    }
+                    else {
+                        cout << "You duck past his arm, and feel a blade cut your shoulder.  Ignoring the pain searing through your body, you rush out the gate and to the hospital, where you are then treated." << "\n";
+                    }
+                }
+
+            }
+            }
+        }
